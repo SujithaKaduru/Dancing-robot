@@ -1,0 +1,128 @@
+.main{
+    border: 3px solid black;
+    height: 500px;
+    margin-top: 100px;
+    background: black;
+}
+.main:hover{
+    animation:changecolor 1s 1s infinite;
+}
+@keyframes changecolor{
+    0%{background: white;}
+    25%{background:blue;}
+    50%{background:orange}
+    75%{background: red;}
+    100%{background: powderblue;}
+}
+
+.face{
+    background: chartreuse;
+    height: 150px;
+    width: 150px;
+    border-radius: 50% 50% 0 0;
+    margin: auto;
+    margin-top: 20px;
+}
+.main:hover .face{
+    transform: rotate(180deg);
+    animation:moveface 1s 1s infinite;
+    transition: width 2s;
+}
+@keyframes moveface{
+    0%{
+        width:150px;
+        border-radius:50%;
+    }
+    50%{
+        width:200px;
+    }
+    100%{
+        width:150px;
+    }
+}
+.eyes{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+.leye,.reye{
+    height:20px;
+    width:20px;
+    border-radius:50%;
+    background:black;
+
+}
+.body1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+    margin-top: 10px;
+}
+.main:hover .body1{
+    animation:movebody1 1s 1s infinite;
+    transform:rotate(180deg);
+    transform: scaleX(1.5);
+    transform:rotateX(180deg);
+}
+@keyframes movebody1 {
+    0%{
+        width:250px;
+        border-radius:50%;
+    }
+    50%{
+        width:150px;
+    }
+    100%{
+        width:350px;
+        
+    }
+    
+}
+.larm{
+    height: 75px;
+    width:25px;
+    background: chartreuse;
+    border-radius:50px;
+
+}
+.main:hover .larm{
+    transform: rotate(90deg);
+    transform-origin:50% 40%;
+    
+}
+.center{
+    height: 150px;
+    width:150px;
+    background: chartreuse;
+    border-radius: 0 0 40% 40%;
+}
+.rarm{
+    height:75px;
+    width:25px;
+    background: chartreuse;
+    border-radius: 50px;
+    
+}
+
+
+.legs{
+    display: flex;
+    justify-content: space-evenly;
+    width:150px;
+    margin:auto;
+    margin-top: -20px;
+
+}
+
+
+    
+
+.lleg,.rleg{
+    height: 75px;
+    width: 25px;
+    background: chartreuse;
+    border-radius: 50px;
+
+}
+
